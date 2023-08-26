@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهران‌سواپ</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boot.css">
+</head>
+
+<body>
+    <div class="header">
+    <div class="pc-header row">
+        <div class="right-header-icons col-6">
+            <a href="history.html">
+                <div class="header-button">
+                    <img src="images/home.svg">
+                    <span>صفحه اصلی</span>
+                </div>
+            </a>
+            <a href="history.html#">
+                <div class="header-button">
+                    <img src="images/buy.svg">
+                    <span>خرید</span>
+                </div>
+            </a>
+            <a href="history.html#info" onclick="check_url_nows()">
+                <div class="header-button">
+                    <img src="images/about.svg">
+                    <span>درباره ما</span>
+                </div>
+            </a>
+            <a href="rules.html">
+                <div class="header-button">
+                    <img src="images/rule.svg">
+                    <span>قوانین</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="left-header-profile col-6">
+        <a href= "https://mrswap.org/%E2%80%9Ctel:+982128422957" class="mrs232">
+                <div class="profile-button msb2">
+                    <img src="images/phones.svg">
+                    <div>
+                       02128422957
+                    </div>
+                </div>
+            </a>
+            <a href="history.html">
+
+                <div class="payment-history">
+                    <img src="images/cash.svg">
+                    تاریخچه تراکنش ها
+                </div>
+            </a>
+                        <a href="login.html">
+                <div class="profile-button">
+                    <img src="images/user.svg">
+                    ورود                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="mobile-header">
+        <div class="row">
+            <div class="col-8">
+                <div class="mobile-header-title">
+                    <a href="history.html">
+                        تهران‌سواپ
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 ham-menu" id="menu_btn">
+                <img src="images/menu.png">
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile_menu">
+            <a href="history.html">
+                <div class="header-button">
+                    <img src="images/home.svg">
+                    <span>صفحه اصلی</span>
+                </div>
+            </a>
+            <a href="login.html">
+                <div class="header-button whitimg">
+                    <img src="images/user.svg">
+                    <span>ورود</span>
+                </div>
+            </a>
+            <a href="history.html">
+                <div class="header-button">
+                    <img src="images/cash.svg">
+                    <span>تاریخچه تراکنش ها</span>
+                </div>
+            </a>
+            <a href="history.html#">
+                <div class="header-button">
+                    <img src="images/buy.svg">
+                    <span>خرید</span>
+                </div>
+            </a>
+            <div class="header-button">
+                <img src="images/about.svg">
+                <span>درباره ما</span>
+            </div>
+            <a href="rules.html">
+                <div class="header-button">
+                    <img src="images/rule.svg">
+                    <span>قوانین</span>
+                </div>
+            </a>
+            <a href="phone:02128424851" class="mrs232">
+                <div class="profile-button msb2">
+                    <img src="images/phones.svg">
+                    <div>
+                        02128424851
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    const header_btn = document.getElementsByClassName('header-button');
+    const menu_btn = document.getElementById('menu_btn');
+    const menu = document.getElementById('mobile_menu');
+    var path = window.location.pathname;
+    switch (path) {
+        case '/':
+            header_btn[0].classList.add('header-button-active');
+            break;
+        case '/shop.html':
+            header_btn[1].classList.add('header-button-active');
+            break;
+        case '/rules.html':
+            header_btn[3].classList.add('header-button-active');
+            break;
+        default:
+            break;
+    }
+
+    var menu_open = false;
+    menu_btn.addEventListener('click', function() {
+        if (menu_open == false) {
+            menu.style.maxHeight = '400px';
+            menu_open = true;
+        } else {
+            menu.style.maxHeight = '0px';
+            menu_open = false;
+        }
+    });
+
+    function check_url_nows() {
+        const ele = document.getElementById('info_page');
+        ele.scrollIntoView();
+    }
+</script>    <div id="message_card">
+        بخش خرید موقتا غیرفعال است
+    </div>
+
+    <div class="intro">
+        <div class="row">
+
+            <div class="col-6 m4 intro-image-header enable-flex">
+                <!-- <img class="intro-image" src="images/intro.svg"> -->
+                <img class="intro-image" src="images/intro/2.png">
+                <div class="intro-image-shape">
+                    قیمت ترون
+                    <br>
+                    به تومان
+                    <br>
+                    <div class="price_amount_main">
+                        4,002                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 m4">
+                <div class="intro-title">
+                 تهران‌سواپ
+                </div>
+                <div class="intro-about">
+                    تهران‌سواپ یه واسطه پرداخت  فوق العاده امن، سریع،<br>
+                    بدون دردسر و بدون مراحل پیچیده احراز هویت،<br>
+                    و با کارمزد پایینه! چی از این بهتر؟
+                </div>
+                <div class="intro-buttons">
+                    <div class="intro-btn-buy">
+                        خرید
+                    </div>
+                    <div class="intro-btn-info" onclick="check_url_nows()">
+                        درباره ما
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 m4 intro-image-header disable">
+                <!-- <img class="intro-image" src="images/intro.svg"> -->
+                <img class="intro-image" src="images/intro/2.png">
+                <!-- <img class="intro-image-shape" src="images/intro/1.png"> -->
+                <div class="intro-image-shape">
+                    قیمت ترون
+                    <br>
+                    به تومان
+                    <br>
+                    <div class="price_amount_main">
+                        4,002                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="abilities mtcard">
+        <div class="ab-title ab-back-back">
+            سرویس ها
+        </div>
+        <div class="ab-shape bg-none">
+            <div class="ab-box-card">
+                <img src="images/cards/money.png">
+                <div>پرداخت انلاین ارزی</div>
+            </div>
+            <a href="login.html">
+                <div class="ab-box-card">
+                    <img src="images/cards/master.png">
+                    <div>گیفت کارت مستر کارت</div>
+                </div>
+            </a>
+            <a href="login.html">
+                <div class="ab-box-card">
+                    <img src="images/cards/express.png">
+                    <div>گیفت کارت امریکن اکسپرس</div>
+                </div>
+            </a>
+            <a href="login.html">
+                <div class="ab-box-card">
+                    <img src="images/cards/visa.png">
+                    <div>گیفت کارت ویزا</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="abilities">
+        <div class="ab-title">
+            ویژگی های تهران‌سواپ
+        </div>
+        <div class="ab-shape">
+            <div class="ab-box">
+                <img src="images/hand.svg">
+                کارمزد منصفانه
+            </div>
+            <div class="ab-box">
+                <img src="images/server.svg">
+                تراکنش هوشمند
+            </div>
+            <div class="ab-box">
+                <img src="images/cofe.svg">
+                راحت و بی دردسر
+            </div>
+            <div class="ab-box">
+                <img src="images/money.svg">
+                نرخ ارز بروز و واقعی
+            </div>
+            <div class="ab-box disable">
+                <img src="images/headphone.svg">
+                پشتیبانی تمام روز
+            </div>
+        </div>
+    </div>
+
+    <div class="info" id="info_page">
+        <div class="row">
+            <div class="col-4 info-image m4 enable">
+                <img src="images/users.svg">
+            </div>
+            <div class="col-8 m4">
+                <div class="info-title">
+                    درباره تهران‌سواپ
+                </div>
+                <div class="info-des">
+                    تهران‌سواپ با یک هدف و اولویت مهم ایجاد شده! و اونم ایجاد<br>
+                    یه بستر کاربردی برای تراکنش و اکسچنج در کوتاه ترین زمان و با <br>
+                    چند مرحله ساده هستش. در تهران‌سواپ شما دیگه برای یک<br>
+                    تراکنش ساده نیاز به احراز هویت های پیچیده، چند مرحله ای و زمان بر<br>
+                    ندارید، علاوه بر این، حتی انجام تراکنش های مختلف هم ساده سازی<br>
+                    شده و با چند کلیک ساده میتونین کارتون رو انجام بدین!<br>
+                </div>
+            </div>
+            <div class="col-4 info-image m4 disable">
+                <img src="images/users.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="another-ability">
+        <div class="row">
+            <div class="col-6 another-image disable">
+                <img src="images/users2.svg">
+            </div>
+            <div class="col-6 another-text m4">
+                <div class="another-title">
+                    دیگر ویژگی های تهران‌سواپ
+                </div>
+                <div class="another-des">
+                    تهران‌سواپ علاوه بر ساده بودن، کلی ویژگی دیگه داره که مارو از بقیه متمایز
+                    میکنه! مثل امنیت بالا، تراکنش هوشند و سریع، قیمت بروز و واقعی ارز ها،
+                    کارمزد کم و منصفانه، پشتیبانی 24 ساعته، و از همه مهم تر دسترس بودن
+                    API برای استفاده از خدمات ما و همکاری در پروژه های مختلف.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="split-border"></div>
+
+    <div class="question" id="qa_page">
+        <div class="qa-title">
+            <img src="images/qa.svg">
+            سوالات متداول
+        </div>
+        <!-- <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=341527&amp;Code=VgflIdBKJ4d0VIqmWcIX"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=341527&amp;Code=VgflIdBKJ4d0VIqmWcIX" alt="" style="cursor:pointer" id="VgflIdBKJ4d0VIqmWcIX"></a> -->
+        <div class="qa-shape">
+            <div class="qa-box">
+                <div class="qa-box-title">
+                    <div class="row">
+                        <div class="col-11">
+                            انجام تراکنش چقدر طول میکشه
+                        </div>
+                        <div class="col-1 qa-box-arrow">
+                            <img src="images/vector.svg" class="qa-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-box-des">
+                    کارمزد برای تراکنش های زیر 200 هزار تومان 10 هزار تومن و بالای 200 هزارتومان 0.4 دهم درصد
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="qa-box-title">
+                    <div class="row">
+                        <div class="col-11">
+                            کارمزد تهران‌سواپ از تراکنش ها چقدر است
+                        </div>
+                        <div class="col-1 qa-box-arrow">
+                            <img src="images/vector.svg" class="qa-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-box-des">
+                    کارمزد تهران‌سواپ از مبلغ کل تراکنش  0.5 درصد است
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="qa-box-title">
+                    <div class="row">
+                        <div class="col-11">
+                            تهران‌سواپ از چه ارز هایی پشتیبانی میکند
+                        </div>
+                        <div class="col-1 qa-box-arrow">
+                            <img src="images/vector.svg" class="qa-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-box-des">
+                تهران‌سواپ هم اکنون از ترون پشتیبانی میکند ولی در اینده نزدیک ارز های گوناگون اضافه خواهد شد 
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="qa-box-title">
+                    <div class="row">
+                        <div class="col-11">
+                            چرا تراکنش من بیش از حد طول کشیده است
+                        </div>
+                        <div class="col-1 qa-box-arrow">
+                            <img src="images/vector.svg" class="qa-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-box-des">
+                    بستگی به زمان کاری تراکنش میباشد در زمان شلوغ بودن شبکه ارز مورد نظر ممکن است زمان طولانی تری سپری بشه
+                </div>
+            </div>
+            <div class="qa-box">
+                <div class="qa-box-title">
+                    <div class="row">
+                        <div class="col-11">
+                            پشتیبانی سایت در چه ساعاتی پاسخگو هستند
+                        </div>
+                        <div class="col-1 qa-box-arrow">
+                            <img src="images/vector.svg" class="qa-arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="qa-box-des">
+                    پشتیبانی از شنبه تا چهارشنبه ساعت 8 صبح الی 2 ظهر و در روز های پنجشنبه و جمعه از ساعت 8 صبح الی 1 ظهر در خدمت شما هستند
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    <div class="row">
+        <div class="col-1 footer-title m4">
+            <img src="images/logo.png">
+            
+        </div>
+        <div class="col-3 pt-3 ftsse">
+            <div class="footer-right-border2"></div>
+            <div class="contact-foot">
+                <div class="ft-2">
+                    <b>آدرس‌:‌</b>          اهواز، محله: مرکز شهر، خیابان موسوی، خیابان کیوان (کاوه )، پلاک: 0.0، کاوه، طبقه: 1،
+                </div>
+                <div class="ft-2">
+                    <b>شماره تماس</b> : ۰۲۱۲*******
+                </div>
+                <div class="footer-right-border22"></div>
+            </div>
+        </div>
+        <div class="col-2 enm">
+         <a href="https://trustseal.enamad.ir/?id=341527&code=VgflIdBKJ4d0VIqmWcIX">
+                <img src="images/enamad.png" alt="enamad" class="enamad">
+            </a> 
+        </div>
+        <div class="col-6 footer-about m4">
+            <div class="row">
+                <div class="footer-right-border disable"></div>
+                <div class="col-4 m4">
+                    <div class="footer-about-me">
+                        بیشتر بدانید
+                        <ul>
+                            <a href="history.html#info">
+                                <li onclick="check_url_nows()">
+                                    درباره ما
+                                </li>
+                            </a>
+                            <a href="rules.html">
+                                <li>
+                                    شرایط و قوانین
+                                </li>
+                            </a>
+                            <a href="history.html#qa">
+                                <li onclick="check_qa_row()">
+                                    سوالات متداول
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 m4">
+                    <div class="footer-right-border"></div>
+                    <div class="footer-social">
+                        <div class="footer-social-title">
+                            شبکه های اجتماعی ما
+                        </div>
+                        <div class="footer-social-des">
+                            ما را در شبکه های اجتماعی دنبال کنید
+                        </div>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://t.me/Mrswap_official"><img src="images/telegram.svg"></a>
+                        <img src="images/instagram.svg">
+                        <img src="images/twiiter.svg">
+                    </div>
+                </div>
+                <div class="col-4 m4 footer-support">
+                    <div class="footer-right-border"></div>
+                    <div>
+                        <div class="footer-support-title">
+                            پشتیبانی
+                        </div>
+                        <div class="footer-support-des">
+                            سوال یا مشکلی پیش آمده ؟
+                        </div>
+                        <a href="https://t.me/MrswapSupport">
+                            <div class="footer-support-button">
+                                <img src="images/support.svg">
+                                ارتباط با پشتیبانی
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    <script src="js/bootstrap.js"></script>
+    <script>
+        const qa = document.querySelectorAll('.qa-box-title');
+        const box = document.getElementsByClassName('qa-box');
+        const arrows = document.getElementsByClassName('qa-arrow');
+
+
+        qa.forEach((element, index) => {
+            element.addEventListener('click', () => {
+                for (let box_index = 0; box_index < box.length; box_index++) {
+                    if (index != box_index) {
+                        const box_show = box[box_index];
+                        const arrow = arrows[box_index];
+                        if (box_show.classList.contains('qa-box-show')) {
+                            box_show.classList.remove('qa-box-show');
+                            setTimeout(() => {
+                                arrow.classList.remove('open-qa-arrow');
+                            }, 500);
+                        }
+                    }
+
+                }
+                if (box[index].classList.contains('qa-box-show')) {
+                    box[index].classList.remove('qa-box-show');
+                    setTimeout(() => {
+                        arrows[index].classList.remove('open-qa-arrow');
+                    }, 500);
+                } else {
+                    box[index].classList.add('qa-box-show');
+                    arrows[index].classList.add('open-qa-arrow');
+                }
+            });
+        });
+
+        let url = window.location.href;
+
+        const fragment = new URL(url).hash.substring(1);
+
+        if (fragment == "info") {
+            const ele = document.getElementById('info_page');
+            ele.scrollIntoView();
+        }
+
+        if (fragment == "qa") {
+            const ele = document.getElementById('qa_page');
+            ele.scrollIntoView();
+        }
+
+        const message_card = document.getElementById("message_card");
+        message_card.style.width = "276px";
+
+        function goshops() {
+            // window.location.href = "shop.html";
+            message_card.classList.add('message_card_error');
+            setTimeout(() => {
+                                message_card.classList.remove('message_card_error');
+                            }, 2000);
+        }
+
+
+        function check_url_nows() {
+            const ele = document.getElementById('info_page');
+            ele.scrollIntoView();
+        }
+
+        function check_qa_row() {
+            const ele = document.getElementById('qa_page');
+            ele.scrollIntoView();
+        }
+    </script>
+            <!-- <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=341527&amp;Code=VgflIdBKJ4d0VIqmWcIX"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=341527&amp;Code=VgflIdBKJ4d0VIqmWcIX" alt="" style="cursor:pointer" id="VgflIdBKJ4d0VIqmWcIX"></a> -->
+
+</body>
+
+</html>
